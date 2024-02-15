@@ -1,7 +1,7 @@
 name: VM Nightly
 on:
-  schedule:
-    - cron: 0 0 * * *
+  pull_request:
+    types: [opened, reopened, synchronize]
   workflow_dispatch:
 
 env:
